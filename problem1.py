@@ -5,7 +5,6 @@ test_graph=[[0,1,2,1],
 
 print(test_graph)
 
-
 def drive(s,t,test_graph,L):
     distance = 0
     if test_graph[s][t] !=0:
@@ -15,3 +14,7 @@ def drive(s,t,test_graph,L):
             return False
         else:
             return True
+    for i in range test_graph(len(test_graph)):
+
+
+print(len(test_graph))
