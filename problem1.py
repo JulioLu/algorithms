@@ -1,11 +1,11 @@
+import dijkstra
+
 test_graph = {
     'A': {'B': 4, 'C': 2},
     'B': {'A': 4, 'C': 5, 'D': 10},
     'C': {'A': 2, 'B': 5, 'D': 3},
     'D': {'B': 10, 'C': 3}
 }
-
-print(test_graph)
 
 def drive(s,t,test_graph,L):
     distance = 0
@@ -16,7 +16,7 @@ def drive(s,t,test_graph,L):
             return False
         else:
             return True
-    for i in range test_graph(len(test_graph)):
 
 
-print(len(test_graph))
+if __name__ == "__main__":
+    print(test_graph)
