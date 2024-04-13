@@ -8,8 +8,10 @@ def f(s,t,test_graph,L):
     distance = 0
     if test_graph[s][t] !=0:
         distance = test_graph[s][t]
-        if distance >=L:
+        if distance >L:
             print("To long distance")
-            return
-        
-
+            return False
+        else:
+            return True
+    
+    
