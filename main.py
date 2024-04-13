@@ -7,8 +7,6 @@ test_graph = {
     'D': {'B': 10, 'C': 3}
 }
 
-
-
 if __name__ == "__main__":
     print(test_graph)
     print(test_graph['A'].values())
