@@ -13,5 +13,5 @@ if __name__ == "__main__":
     print(test_graph)
     print(test_graph['A'].values())
     
-    dijkstra(test_graph,1)
+    dijkstra(test_graph,"A")
     
