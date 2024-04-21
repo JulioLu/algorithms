@@ -1,6 +1,7 @@
 from dijkstra import dijkstra
+from dijkstra import shortest_path
 
-test_graph = {
+graph = {
     'A': {'B': 4, 'C': 2},
     'B': {'A': 4, 'C': 5, 'D': 10},
     'C': {'A': 2, 'B': 5, 'D': 3},
@@ -8,8 +9,16 @@ test_graph = {
 }
 
 if __name__ == "__main__":
-    print(test_graph)
-    print(test_graph['A'].values())
-    
-    dijkstra(test_graph,"A")
-    
+    print(graph)
+    print(graph['A'].values())
+
+    start_node = 'A'
+    end_node = 'D'
+
+    shortest_path = shortest_path(graph, start_node, end_node)
+    if shortest_path is not None:
+        print("Συντομότερη διαδρομή από τον κόμβο", start_node, "στον κόμβο", end_node, ":", shortest_path)
+        total_distance = sum(graph[shortest_path[i]][shortest_path[i + 1]] for i in range(len(shortest_path) - 1))
+        print("Συνολική απόσταση:", total_distance)
+    else:
+        print("Δεν υπάρχει διαδρομή από τον κόμβο", start_node, "στον κόμβο", end_node)
