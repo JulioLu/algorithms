@@ -15,10 +15,10 @@ def customer_line(customer):
     avg_wait_time = total_wait_time / len(customer_queue)
 
     if customer.service_time > avg_wait_time:
-        print(f"Ο πελάτης με ID {customer.customer_id} έχει μεγάλο χρόνο αναμονής.")
+        print(f"Ο πελάτης με ID {customer.customer_id} έχει μεγάλο χρόνο αναμονής. Μπαίνει στο τέλος της ουράς")
         customer_queue.append(customer)
     else:
-        print(f"Ο πελάτης με ID {customer.customer_id} έχει μικρό χρόνο αναμονής. Μπαίνει πρώτος στην ουρά.")
+        print(f"Ο πελάτης με ID {customer.customer_id} έχει μικρό χρόνο αναμονής. Μπαίνει μπροστά στην ουρά.")
         customer_queue.appendleft(customer)
 
     print(f"Ο πελάτης με ID {customer.customer_id} βρίσκεται στην ουρά.")
