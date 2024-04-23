@@ -25,7 +25,7 @@ def customer_line(customer):
     print("Πελάτες στην ουρά:")
     for c in customer_queue:
         print(f"ID: {c.customer_id}, Χρόνος Εξυπηρέτησης: {c.service_time} λεπτά")
-
+    print(f"Ο χρόνος αναμονής είναι: {total_wait_time}")
     return customer_queue
 
 def sum_service_times(queue):
