@@ -9,8 +9,8 @@ if __name__ == "__main__":
     customers = [
         Customer(1, 6),
         Customer(2, 6),
-        Customer(3, 3),
-        Customer(4, 6),
+        Customer(3, 1),
+        Customer(4, 1),
         Customer(5, 1),
         Customer(6, 1)
     ]

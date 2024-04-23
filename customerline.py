@@ -4,6 +4,7 @@ class Customer:
     def __init__(self, customer_id, service_time):
         self.customer_id = customer_id
         self.service_time = service_time
+        self.wait_time = 0  # Αρχικός χρόνος αναμονής είναι 0
 
 def customer_line(customer, customer_queue):
     already_in_queue = any(c.customer_id == customer.customer_id for c in customer_queue)
