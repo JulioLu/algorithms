@@ -9,7 +9,6 @@ graph = {
     'E': {'B': 5, 'D': 1}
 }
 
-
 if __name__ == "__main__":
     print(graph)
     print(graph['A'].values())
