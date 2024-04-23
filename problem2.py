@@ -6,13 +6,12 @@ from collections import deque
 if __name__ == "__main__":
     customer_queue = deque()
 
-    # Παράδειγμα χρήσης
     customers = [
         Customer(1, 6),
         Customer(2, 6),
-        Customer(3, 6),
+        Customer(3, 3),
         Customer(4, 6),
-        Customer(5, 6),
+        Customer(5, 1),
         Customer(6, 1)
     ]
 
