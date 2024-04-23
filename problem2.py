@@ -9,12 +9,12 @@ if __name__ == "__main__":
     # Παράδειγμα χρήσης
     customers = [
         Customer(1, 6),
-        Customer(2, 2),
-        Customer(3, 1),
-        Customer(4, 5),
-        Customer(5, 1),
-        Customer(6, 11)
+        Customer(2, 6),
+        Customer(3, 6),
+        Customer(4, 6),
+        Customer(5, 6),
+        Customer(6, 1)
     ]
 
     for customer in customers:
-        customer_queue = customer_line(customer)
+        customer_queue = customer_line(customer, customer_queue)

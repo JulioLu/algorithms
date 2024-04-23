@@ -6,7 +6,7 @@ class Customer:
         self.customer_id = customer_id
         self.service_time = service_time
 
-def customer_line(customer):
+def customer_line(customer, customer_queue):
     if not customer_queue:
         customer_queue.append(customer)
 
