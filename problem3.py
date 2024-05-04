@@ -16,6 +16,6 @@ def calculate_splitting_cost(prices, num_parts):
     return costs[1, m]
 
 
-string = "abcdabcdabcdabcdabcd"
+string = "abcdfedghjg"
 print("Length of string:", len(string))
-print("Minimum splitting cost:", calculate_splitting_cost([10, 18, 19], len(string)))
+print("Minimum splitting cost:", calculate_splitting_cost([1, 6, 3], len(string)))
