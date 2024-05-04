@@ -32,7 +32,7 @@ def dijkstra(graph, start):
                     nodes_to_visit.append(neighbor) #O(1)
 
     return distances, previous_nodes #O(1)
-# 2VV + VEV + V + V = VVE + 2VV + 2V
+# 2VV + VE + V + V = VE + 2VV + 2V = V^2 + VE
 
 def shortest_path(graph, start, end):
     distances, previous_nodes = dijkstra(graph, start)
